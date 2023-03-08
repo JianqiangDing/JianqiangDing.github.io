@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>Jianqiang Ding's Personal Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="w3.css">
+
+    <style>
+        .w3-sidebar a {
+            font-family: "Roboto", sans-serif
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .w3-wide {
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="w3-content" style="max-width:1000px;">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:200px;"
+        id="mySidebar">
+        <div class="w3-container  w3-center w3-display-container w3-padding-16">
+            <h3><b>JIANQIANG</b></h3>
+        </div>
+
+        <div class="w3-padding-64 w3-text-white w3-large" style="font-weight:bold">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+            <a href="#publications" class="w3-bar-item w3-button">Research</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+        <div class="w3-bar-item w3-padding-24">JIANQIANG</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
+            style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+        </div>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:150px">
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- The About Section -->
+        <div class="w3-container w3-center w3-padding-32" id="about">
+            <img style="height: 60%;max-width: 150px" alt="profile photo" src="imgs/avatar.jpg">
+            <h1>Jianqiang Ding</h1>
+            <p class="w3-justify"
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+                I am Jianqiang Ding, a passionate researcher currently working as a Research Intern at the State Key
+                Laboratory of Computer Science at ISCAS, China. In 2020, I completed my Master's degree from Shenzhen
+                University and previously earned a Bachelor's degree from Harbin Engineering University. My research
+                primarily focuses on two key areas: Reachability Analysis and Reliable Controller Synthesis by combining
+                the principles of formal methods.
+            </p>
+            <p class="w3-center">
+                <a href="mailto:dingjianqiang0x@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="https://github.com/JianqiangDing">Github</a> &nbsp/&nbsp
+                <a href="https://dblp.org/pid/238/8989.html"> DBLP </a>
+            </p>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="w3-container w3-padding-32 w3-center" id="projects">
+            <h2>Recent Projects</h2>
+            <p class="w3-justify">
+                <li>Boundary analysis based Reachability analysis Toolbox for dynamic systems in Python</li>
+            </p>
+            <img style="width:30%;" src="imgs/jet_engine_cmp.png"> &nbsp&nbsp <img style="width:30%;"
+                src="imgs/lotka_volterra_2d_cmp.png"> &nbsp&nbsp <img style="width:30%;"
+                src="imgs/sync_machine_cmp.png">
+            <p class="w3-justify">
+                The project focuses on the implementation of a tool that employs the "set-boundary based method" for
+                analyzing the reachability of nonlinear systems. Reachability analysis is an essential area of study
+                that involves computing reachable sets and plays a significant role in the safety verification
+                of such systems. However, the propagation and accumulation of over-approximation errors, known as the
+                wrapping effect, can lead to overly pessimistic results, rendering many temporal properties unverifiable
+                in practice. To reduce the wrapping effect, partitioning techniques are often used, but they can induce
+                extensive computation demands on time and memory. In this context, the tool aims to explore an
+                alternative approach that analyzes just a small sub-volume of the initial state set, which encloses its
+                boundary, to compute the full reachable state space based on state-exploratory analysis. The tool's
+                potential to provide significant computational benefits for complex real-world applications attracts
+                considerable attention among researchers and experts. The project's theoretical foundation is based on
+                two papers published in IEEE Transactions on Automatic Control.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
