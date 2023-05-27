@@ -1,110 +1,517 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html>
 
 <head>
-    <title>Jianqiang Ding's Personal Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <link rel="stylesheet" href="w3.css">
-
-    <style>
-        .w3-sidebar a {
-            font-family: "Roboto", sans-serif
-        }
-
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        .w3-wide {
-            font-family: "Montserrat", sans-serif;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jianqiang Ding's Homepage</title>
+    <meta name="description" content="">
+    <!-- Bootstrap & MDB -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/css/mdb.min.css"
+        integrity="sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g=" crossorigin="anonymous" />
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css"
+        integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/carlito" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <!-- <link rel="shortcut icon" href="/assets/imgs/pxArt.png"> -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="/">
+    <!-- Open Graph -->
 </head>
 
-<body class="w3-content" style="max-width:1000px;">
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:200px;"
-        id="mySidebar">
-        <div class="w3-container  w3-center w3-display-container w3-padding-16">
-            <h3><b>JIANQIANG</b></h3>
-        </div>
-
-        <div class="w3-padding-64 w3-text-white w3-large" style="font-weight:bold">
-            <a href="#about" class="w3-bar-item w3-button">About</a>
-            <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-            <a href="#publications" class="w3-bar-item w3-button">Research</a>
-        </div>
-    </nav>
-
-    <!-- Top menu on small screens -->
-    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-        <div class="w3-bar-item w3-padding-24">JIANQIANG</div>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"
-            style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-        </div>
+<body class="nav-fixed-top">
+    <!-- Header -->
+    <header>
+        <!-- Nav Bar -->
+        <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand title font-weight-lighter" href="./index.html">
+                    <span class="font-weight-bold">Jianqiang Ding
+                    </span>
+                    <span>「丁建强」</span>
+                </a>
+                <!-- Social Icons -->
+                <div class="row ml-1 ml-sm-0">
+                    <span class="contact-icon">
+                        <a href="mailto:dingjianqiang0x@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/JianqiangDing" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://dblp.org/pid/238/8989.html" target="_blank" title="DBLP"><i
+                                class="ai ai-dblp"></i></a>
+                    </span>
+                </div>
+                <!-- Navbar Toogle -->
+                <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <ul class="navbar-nav ml-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#research">
+                                Research
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#projects">
+                                Project
+                            </a>
+                        </li>
+                        <!-- Other pages -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <!-- Content -->
+    <div class="container mt-5">
+        <div class="post">
+            <!-- <header class="post-header">
+                <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
+                    <span class="font-weight-bold">Jianqiang</span> Ding
+                </a>
+            </header> -->
 
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-        id="myOverlay"></div>
+            <article>
+                <div class="col">
+                    <div class="row">
+                        <img src="./assets/imgs/avatar_line_drawing.svg"
+                            style="max-width: 25%;padding: 20px 10px 0px 10px; ">
+                        <div class="col" style="padding-left: 30px; padding-top: 50px;">
+                            <!-- <div class="col">
+                                <h2>Jianqiang Ding</h2>
+                                I am currently a research intern in ISCAS. I am currently looking for phd position in
+                                intersection of formal methods, control theory, robotics, autonomous driving.
+                            </div>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:150px">
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+                            <p /> -->
 
-        <!-- The About Section -->
-        <div class="w3-container w3-center w3-padding-32" id="about">
-            <img style="height: 60%;max-width: 150px" alt="profile photo" src="imgs/avatar.jpg">
-            <h1>Jianqiang Ding</h1>
-            <p class="w3-justify"
-                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-                I am Jianqiang Ding, a passionate researcher currently working as a Research Intern at the State Key
-                Laboratory of Computer Science at ISCAS, China. In 2020, I completed my Master's degree from Shenzhen
-                University and previously earned a Bachelor's degree from Harbin Engineering University. My research
-                primarily focuses on two key areas: Reachability Analysis and Reliable Controller Synthesis by combining
-                the principles of formal methods.
-            </p>
-            <p class="w3-center">
-                <a href="mailto:dingjianqiang0x@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="https://github.com/JianqiangDing">Github</a> &nbsp/&nbsp
-                <a href="https://dblp.org/pid/238/8989.html"> DBLP </a>
-            </p>
-            </tbody>
-            </table>
-        </div>
+                            <!-- <p style="color:red; font-weight: 600; font-size: larger;">I am looking for Ph.D. position
+                                currently.
+                            </p> -->
 
-        <div class="w3-container w3-padding-32 w3-center" id="projects">
-            <h2>Recent Projects</h2>
-            <p class="w3-justify">
-                <li>Boundary analysis based Reachability analysis Toolbox for dynamic systems in Python</li>
-            </p>
-            <img style="width:30%;" src="imgs/jet_engine_cmp.png"> &nbsp&nbsp <img style="width:30%;"
-                src="imgs/lotka_volterra_2d_cmp.png"> &nbsp&nbsp <img style="width:30%;"
-                src="imgs/sync_machine_cmp.png">
-            <p class="w3-justify">
-                The project focuses on the implementation of a tool that employs the "set-boundary based method" for
-                analyzing the reachability of nonlinear systems. Reachability analysis is an essential area of study
-                that involves computing reachable sets and plays a significant role in the safety verification
-                of such systems. However, the propagation and accumulation of over-approximation errors, known as the
-                wrapping effect, can lead to overly pessimistic results, rendering many temporal properties unverifiable
-                in practice. To reduce the wrapping effect, partitioning techniques are often used, but they can induce
-                extensive computation demands on time and memory. In this context, the tool aims to explore an
-                alternative approach that analyzes just a small sub-volume of the initial state set, which encloses its
-                boundary, to compute the full reachable state space based on state-exploratory analysis. The tool's
-                potential to provide significant computational benefits for complex real-world applications attracts
-                considerable attention among researchers and experts. The project's theoretical foundation is based on
-                two papers published in IEEE Transactions on Automatic Control.
-            </p>
+                            <p>My ultimate vision is to enhance the autonomy of machines to reliably assist and benefit
+                                human society. My research goal is developing efficient autonomous control policies to
+                                function in safety-critical settings with formal guarantees.</p>
+
+                            <p>
+                                <!-- To this end,  -->
+                                I conduct research at the intersection of <a style="text-decoration: underline;">formal
+                                    methods</a> and <a style="text-decoration: underline;">control theory</a>. Through
+                                investigating in constructing a unified framework that integrates high-level planning
+                                with low-level controls, my research is dedicated to offering universally applicable
+                                techniques to improve autonomous agents' <a
+                                    style="text-decoration: underline;">stability, safety, and robustness</a> in a
+                                variety of applications, including autonomous driving and robotics.
+
+                                <!-- Through exploring in
+                                designing unified framework integrate high-level planning and low-level controls, my
+                                focus is providing universally techniques to improve autonomous agents's ability in
+                                stability, safety, and robustness in vast applications, including autonomous driving,
+                                robotics. -->
+                            </p>
+
+                            <!-- <p>My ultimate vision is to enhance the autonomy of machines to help human society. In
+                                particular, I believe that robots' physical intelligence is the key to automate many
+                                inhumane physical labors.</p> -->
+
+                            <!-- <p>Although there has been a rapid growth in the robotics technologies for robots' physical
+                                intelligence over the last few decades, there are still many impediments that prevent
+                                robots
+                                to be deployed in the real world. I think safety is one of the main concerns, since it
+                                is
+                                directly related to human lives as well as the reliability of robot systems. Therefore,
+                                during my Ph.D. studies, I am focusing on theories and technologies that can provide
+                                safety-guarantee for robot systems.</p> -->
+
+                            <!-- <p>I am a research scientist in the Deep Imagination Research (DIR) team of NVIDIA Research.
+                            </p>
+                            <p>I am working on <a href="https://www.nvidia.com/en-us/gpu-cloud/picasso/">NVIDIA AI
+                                    Foundations</a>. I created the earliest <a
+                                    href="https://arxiv.org/abs/2010.02502">accelerated algorithm for diffusion
+                                    models</a>
+                                that is widely used in recent generative AI systems including <a
+                                    href="https://cdn.openai.com/papers/dall-e-2.pdf">DALL-E 2</a>, <a
+                                    href="https://imagen.research.google/paper.pdf">Imagen</a>, <a
+                                    href="https://en.wikipedia.org/wiki/Stable_Diffusion">Stable Diffusion</a>, and <a
+                                    href="https://arxiv.org/abs/2210.15257">ERNIE-ViLG 2.0</a>. I co-authored <a
+                                    href="https://arxiv.org/abs/2108.01073">the paper</a> that is the foundation of <a
+                                    href="https://github.com/CompVis/stable-diffusion/blob/main/README.md#image-modification-with-stable-diffusion">Stable
+                                    Diffusion’s img2img method</a>. I aim to further <a
+                                    href="https://arxiv.org/abs/2201.11793">democratize the use of diffusion models for
+                                    general applications</a>, such as super-resolution, inpainting, and <a
+                                    href="https://arxiv.org/abs/2209.11888">JPEG restoration</a>.
+                            </p> -->
+
+                            <!-- <div class="col" style="color:red; font-weight: 600; font-size: larger;">
+                                I am looking for phd position currently.
+                            </div> -->
+
+                            <!-- <div class="col">
+                                <a href="javascript:toggle_show_hide('myDIV')">Try this</a>
+                            </div>
+
+                            <div class="col" id="myDIV" style="display: none;">
+                                This is my DIV element.
+                            </div> -->
+
+                        </div>
+                    </div>
+
+                    <p />
+
+                    <!-- RESEARCH INTERESTS -->
+
+                    <div class="col">
+                        <!-- 
+                        <p style="color:red; font-weight: 600; font-size: larger;">I am looking for phd position
+                            currently.</p> -->
+
+                        <!-- <div class="col" style="color:red; font-weight: 600; font-size: larger;">
+                            I am looking for phd position currently.
+                        </div> -->
+
+                        <hr />
+
+                        <h5 id="research">Research</h5>
+                        <div class="publications-front">
+                            <h3 class="year">2023</h3>
+                            <ol class="bibliography">
+                                <li>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-1">
+                                            PyBDR
+                                        </div> -->
+                                        <div id="ding2023provable" class="col-sm-11">
+                                            <span class="author">
+                                                <em>Jianqiang Ding</em>, Taoran Wu, Yuping Qian, Lijun Zhang, Bai Xue
+                                            </span>
+
+                                            <span class="title" style="font-size: 16px; ">
+                                                Provable Reach-avoid Controllers Synthesis Based on Inner-approximating
+                                                Controlled Reach-avoid Sets
+                                            </span>
+
+                                            <span class="periodical">
+                                                <nobr style="color:#bb2222; font-weight: 600;">
+                                                    Preprint
+                                                </nobr>
+                                                ,
+                                                <em>arXiv:2304.11550.</em>
+                                                &nbsp;
+                                                <nobr class="links" style="font-weight: 600;">
+                                                    [<a href="https://arxiv.org/abs/2304.11550" target="_blank">pdf</a>]
+                                                </nobr>
+                                                &nbsp;
+                                                <nobr class="links" style="font-weight: 600;">
+                                                    [<a
+                                                        href="javascript:toggle_show_hide('ding2023provable_abstract')">abstract</a>]
+                                                </nobr>
+
+                                                <p id="ding2023provable_abstract" style="display: none;">In this paper,
+                                                    we propose an approach for synthesizing provable reach-avoid
+                                                    controllers, which drive a deterministic system operating in an
+                                                    unknown environment to safely reach a desired target set. The
+                                                    approach falls within the reachability analysis framework and is
+                                                    based on the computation of inner-approximations of controlled
+                                                    reach-avoid sets(CRSs). Given a target set and a safe set, the
+                                                    controlled reach-avoid set is the set of states such that starting
+                                                    from each of them, there exists at least one controller to ensure
+                                                    that the system can enter the target set while staying inside the
+                                                    safe set before the target hitting time. Therefore, the boundary of
+                                                    the controlled reach-avoid set acts as a barrier, which separating
+                                                    states capable of achieving the reach-avoid objective from those
+                                                    that are not, and thus the computed inner-approximation provides a
+                                                    viable space for the system to achieve the reach-avoid objective.
+                                                    Our approach for synthesizing reach-avoid controllers mainly
+                                                    consists of three steps. We first learn a safe set of states in the
+                                                    unknown environment from sensor measurements based on a support
+                                                    vector machine approach. Then, based on the learned safe set and
+                                                    target set, we compute an inner-approximation of the CRS. Finally,
+                                                    we synthesize controllers online to ensure that the system will
+                                                    reach the target set by evolving inside the computed
+                                                    inner-approximation. The proposed method is demonstrated on a
+                                                    Dubin's car system.
+                                                </p>
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- MORE PUBLICATION -->
+                                </li>
+                            </ol>
+
+                            <h3 class="year">2019</h3>
+                            <ol class="bibliography">
+                                <li>
+                                    <div class="row">
+                                        <!-- <div class="col-sm-1">
+                                            PyBDR
+                                        </div> -->
+                                        <div id="ding2023provable" class="col-sm-11">
+                                            <span class="author">
+                                                Pengfei Xu, <em>Jianqiang Ding</em>, Hao Zhang & Hui Huang
+                                            </span>
+
+                                            <span class="title" style="font-size: 16px; ">
+                                                Discernible image mosaic with edge-aware adaptive tiles
+                                            </span>
+
+                                            <span class="periodical">
+                                                <nobr style="color:#008b8b; font-weight: 600;">
+                                                    Computational Visual Media 5 (2019)
+                                                </nobr>.
+                                                <nobr class="links" style="font-weight: 600;">
+                                                    [<a href="https://link.springer.com/article/10.1007/s41095-019-0130-7"
+                                                        target="_blank">pdf</a>]
+                                                </nobr>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- MORE PUBLICATION -->
+
+                                </li>
+                            </ol>
+                        </div>
+
+                        <hr />
+
+                        <h5 id="projects">Project</h5>
+                        <div class="publications-front">
+                            <ol class="bibliography">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-sm-1" style="vertical-align: middle;">
+                                            <a href="https://asag-iscas.github.io/docs.pybdr/docs/overview"
+                                                target="_blank">PyBDR</a>
+                                        </div>
+                                        <div id="ding2023provable" class="col-sm-11">
+                                            <span class="title" style="font-size: 16px;">
+                                                Set-boundary based Reachability Analysis Toolbox in Python.
+                                                <!-- <a style="color: #828282;"
+                                                    href="javascript:toggle_show_hide('pybdr_motivation')">[motivation]</a> -->
+                                            </span>
+                                            <span id="pybdr_motivation" style=" display:block;">Reachability analysis,
+                                                which involves computing reachable state sets, plays a fundamental role
+                                                in the temporal verification of nonlinear systems. Overly pessimistic
+                                                over-approximations, however, render many temporal properties
+                                                unverifiable in practice. This pessimism mainly arises due to the
+                                                wrapping effect, which is the propagation and accumulation of the
+                                                over-approximation error through the iterative computation in the
+                                                construction of reachable sets. As the extent of the wrapping effect
+                                                correlates strongly with the volume of the initial set, techniques that
+                                                partition the initial state space and independently compute reachable
+                                                sets of those partitions are often used to reduce the wrapping effect,
+                                                <a style="color: red;">especially for large initial sets or/and large
+                                                    time horizons</a>. Such partitioning may, however, induce extensive
+                                                demand on computation time and memory, often rendering the existing
+                                                reachability analysis techniques not suitable for complex real-world
+                                                applications. Not being forced to explore the full, e.g. exponential in
+                                                the dimensionality, number of partitions could help such procedures
+                                                tremendously. This is the theme of this tool, which implements the
+                                                so-called <a
+                                                    href="https://ieeexplore.ieee.org/document/7585104">'set-boundary
+                                                    based method'</a> that explores means of computing the full
+                                                reachable state space based on state-exploratory analysis of just a
+                                                small sub-volume of the initial state set, namely a set enclosing its
+                                                boundary.</span>
+                                            <img src="./assets/imgs/jet_engine_cmp.png" style="width: 240px;">
+                                            <img src="./assets/imgs/lotka_volterra_2d_cmp.png" style="width: 240px;">
+                                            <img src="./assets/imgs/sync_machine_cmp.png" style="width: 240px;">
+                                        </div>
+                                    </div>
+                                    <!-- MORE PROJECTS -->
+                                </li>
+                            </ol>
+                        </div>
+
+                        <hr />
+
+                        <h5 id="education">Education</h5>
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="padding:0px 00px 10px 00px;width:75%;vertical-align:middle;font-weight:400;">
+                                        Shenzhen University
+                                        <br>
+                                        Master of Science in Engineering, Computer Technology
+                                        <br>
+                                        Sep. 2017 &mdash; Jun. 2020 &nbsp;
+                                        Supervisor: <a href="https://vcc.tech/~huihuang">Hui
+                                            Huang </a>
+                                        </br>
+                                    </td>
+                                    <td style="width:10%;vertical-align:middle;">
+                                        <img src="./assets/imgs/Shenzhen_University_Logo.svg" width="65" height="65">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="padding:0px 00px 10px 00px;width:75%;vertical-align:middle;font-weight:400;">
+                                        Harbin Engineering University
+                                        <br>
+                                        Bachelor of Engineering, Thermal Energy & Power Engineering
+                                        <br>
+                                        Aug. 2011 &mdash; Jul. 2015
+                                        </br>
+                                    </td>
+                                    <td style="width:10%;vertical-align:middle"><img
+                                            src="./assets/imgs/Harbin_Engineering_University_logo.png" width="65"
+                                            height="65">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <hr />
+
+                        <h5 id="experience">Experience</h5>
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="padding:0px 00px 10px 00px;width:75%;vertical-align:middle;font-weight:400;">
+                                        State Key Lab of Computer Science, ISCAS
+                                        <br>
+                                        Research intern
+                                        <br>
+                                        Feb. 2022 &mdash; Mar. 2023 &nbsp;
+                                        Supervisor: <a href="http://lcs.ios.ac.cn/~xuebai/index.html">Bai Xue</a>
+                                        </br>
+                                    </td>
+                                    <td style="width:10%;vertical-align:middle"><img src="./assets/imgs/ISCAS-logo.jpg"
+                                            width="90"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="padding:0px 00px 10px 00px;width:75%;vertical-align:middle;font-weight:400;">
+                                        State Key Lab of CAD&CG, Zhejiang University
+                                        <br>
+                                        Research Assistant
+                                        <br>
+                                        Aug. 2021 &mdash; Jan. 2022 &nbsp;
+                                        Supervisor: <a href="https://www.youyizheng.net">Youyi Zheng</a>
+                                        </br>
+                                    </td>
+                                    <td style="width:10%;vertical-align:middle"><img
+                                            src="./assets/imgs/Zhejiang_University_Logo.svg" width="65" height="65">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table
+                            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="padding:0px 00px 10px 00px;width:75%;vertical-align:middle;font-weight:400;">
+                                        Visual Computing Research Center, Shenzhen University
+                                        <br>
+                                        Research Assistant
+                                        <br>
+                                        Jun. 2020 &mdash; Jul. 2021 &nbsp;
+                                        Supervisor: <a href="https://vcc.tech/~huihuang">Hui Huang</a>
+                                        </br>
+                                    </td>
+                                    <td style="width:10%;vertical-align:middle"><img
+                                            src="./assets/imgs/Shenzhen_University_Logo.svg" width="65" height="65">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </article>
         </div>
     </div>
 
 </body>
+<!-- Load Core and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"
+    integrity="sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css"
+    integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"
+    integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+<script src="/assets/js/katex.js"></script>
+<!-- Load Mansory & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity=""
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+    // Init Masonry
+    var $grid = $('.grid').masonry({
+        gutter: 10,
+        horizontalOrder: true,
+        itemSelector: '.grid-item',
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry('layout');
+    });
+</script>
+
+<script>
+    function toggle_show_hide(proj_id) {
+        var x = document.getElementById(proj_id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
 
 </html>
